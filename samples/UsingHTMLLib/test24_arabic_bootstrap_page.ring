@@ -10,7 +10,7 @@ load "htmllib.ring"
 ? "Demo 24: Arabic Bootstrap..."
 
 oHTML = new HTMLWriter
-oHTML.setTitle("جامعة الملك سعود - قسم علوم الحاسب")
+oHTML.setTitle("صفحة الجامعة")
 oHTML.enableBootstrap()
 oHTML.enableBootstrapIcons()
 oHTML.setDirection("rtl")
@@ -18,7 +18,7 @@ oHTML.setLang("ar")
 oHTML.addGoogleFont("Noto Naskh Arabic")
 oHTML.addCSSRule("body", [["font-family", "'Noto Naskh Arabic', Tahoma, sans-serif"]])
 
-oHTML.bsNavbar("جامعة الملك سعود", "/", [
+oHTML.bsNavbar("صفحة الجامعة", "/", [
 	["الرئيسية", "/", true],
 	["الأقسام", "#", false],
 	["البحث العلمي", "#", false],
@@ -29,7 +29,7 @@ oHTML.bsOpenContainer("")
 oHTML.addSpacer("30px")
 
 oHTML.addRawHTML('<h1 class="mb-3">قسم علوم الحاسب</h1>')
-oHTML.addRawHTML('<p class="lead mb-4">مرحبا بكم في قسم علوم الحاسب بجامعة الملك سعود - الرياض</p>')
+oHTML.addRawHTML('<p class="lead mb-4">مرحبا بكم في قسم علوم الحاسب</p>')
 
 oHTML.bsOpenRow("g-4")
 oHTML.bsOpenCol("col-md-4")
@@ -47,10 +47,10 @@ oHTML.addSpacer("30px")
 oHTML.addRawHTML('<h2 class="mb-3">أعضاء هيئة التدريس</h2>')
 oHTML.bsTable([
 	["الاسم", "التخصص", "الرتبة", "البريد"],
-	["د. أحمد محمد", "ذكاء اصطناعي", "أستاذ مشارك", "ahmed@ksu.edu.sa"],
-	["د. فاطمة علي", "هندسة برمجيات", "أستاذ مساعد", "fatima@ksu.edu.sa"],
-	["د. خالد إبراهيم", "شبكات حاسب", "أستاذ", "khalid@ksu.edu.sa"],
-	["د. نورة سعد", "أمن معلومات", "أستاذ مساعد", "noura@ksu.edu.sa"]
+	["د. أحمد محمد", "ذكاء اصطناعي", "أستاذ مشارك", "ahmed@email.com"],
+	["د. فاطمة علي", "هندسة برمجيات", "أستاذ مساعد", "fatima@email.com"],
+	["د. خالد إبراهيم", "شبكات حاسب", "أستاذ", "khalid@email.com"],
+	["د. نورة سعد", "أمن معلومات", "أستاذ مساعد", "noura@email.com"]
 ], [:striped = true, :hover = true, :bordered = true])
 
 oHTML.bsAccordion("arFaq", [
