@@ -32,6 +32,10 @@ The generated pages can optionally use JavaScript components, Bootstrap 5, Chart
 
 	ringpm install htmllib from ringpackages
 
+## Screen Shot
+
+![Screen Shot 1](https://raw.githubusercontent.com/ringpackages/htmllib/main/images/htmllib_shot1.png)
+
 ## Quick Start
 
 ### Simple Page
